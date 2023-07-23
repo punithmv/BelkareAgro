@@ -1,0 +1,200 @@
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #0b3e25;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #0b3e25;
+}
+
+.body-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #57534e;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .desktop {
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 10px rgba(39, 59, 69, 0.2);
+          box-shadow: 0px 4px 10px rgba(39, 59, 69, 0.2);
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 100px;
+  }
+}
+
+header .header-wrapper {
+  padding: 10px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  header .header-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header .header-logo-link {
+  display: inline-block;
+}
+
+header .header-logo {
+  width: 70px;
+}
+
+@media screen and (min-width: 1024px) {
+  header .header-logo {
+    width: 80px;
+  }
+}
+
+main {
+  margin-top: 80px;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    margin-top: 100px;
+  }
+}
+
+main .our-shops-section {
+  background-color: rgba(245, 245, 244, 0.5);
+  padding: 60px 0;
+}
+
+main .our-shops-section .our-shops-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+main .our-shops-section .our-shops-heading .our-shops-title {
+  margin-bottom: 20px;
+}
+
+main .our-shops-section .our-shops-list .our-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .our-shops-section .our-shops-list .our-shop:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .our-shops-section .our-shops-list .our-shop {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .our-shops-section .our-shops-list .our-shop:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+main .our-shops-section .our-shops-list .our-shop-image {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .our-shops-section .our-shops-list .our-shop-image {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+main .our-shops-section .our-shops-list .our-shop-image img {
+  width: 100%;
+}
+
+main .our-shops-section .our-shops-list .our-shop-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main .our-shops-section .our-shops-list .our-shop-content {
+    width: 50%;
+  }
+}
+
+main .our-shops-section .our-shops-list .our-shop-content p {
+  max-width: 80%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main .our-shops-section .our-shops-list .our-shop.reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+/*# sourceMappingURL=style.css.map */
