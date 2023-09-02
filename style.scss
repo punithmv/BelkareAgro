@@ -43,11 +43,11 @@ h3 {
 .body-text {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 26px;
   color: #57534e;
   @media screen and (min-width: 1024px) {
     font-size: 18px;
-    line-height: 26px;
+    line-height: 30px;
   }
 }
 
@@ -192,13 +192,13 @@ main{
                 border-radius: 20px;
                 transition: all 0.3s ease;
                 &:hover{
-                    scale: 1.1;
+                    box-shadow: 0px 4px 10px rgba(39, 59, 69, 0.2);
                 }
                 &-main{
                     display: flex;
                     align-items: center;
                     gap: 30px;
-                    margin-bottom: 20px;
+                    margin-bottom: 25px;
                     .contact-image{
                         width: 82px;
                         height: 82px;
@@ -217,12 +217,13 @@ main{
                 &-description{
                     p:first-child{
                         color: #5c74f0;
-                        margin-bottom: 10px;
+                        margin-bottom: 20px;
                     }
                     a{
-                        text-decoration: none;
+                        display: inline-block;
+                        transition: all 0.3s ease-in-out;
                         &:hover{
-                            color: #5c74f0;
+                            scale: 1.1;
                         }
                     }
                 }

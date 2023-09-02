@@ -52,14 +52,14 @@ h3 {
 .body-text {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 26px;
   color: #57534e;
 }
 
 @media screen and (min-width: 1024px) {
   .body-text {
     font-size: 18px;
-    line-height: 26px;
+    line-height: 30px;
   }
 }
 
@@ -282,7 +282,8 @@ main .contact-us-section .contact-us-list .contact {
 }
 
 main .contact-us-section .contact-us-list .contact:hover {
-  scale: 1.1;
+  -webkit-box-shadow: 0px 4px 10px rgba(39, 59, 69, 0.2);
+          box-shadow: 0px 4px 10px rgba(39, 59, 69, 0.2);
 }
 
 main .contact-us-section .contact-us-list .contact-main {
@@ -293,7 +294,7 @@ main .contact-us-section .contact-us-list .contact-main {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 main .contact-us-section .contact-us-list .contact-main .contact-image {
@@ -317,14 +318,16 @@ main .contact-us-section .contact-us-list .contact-main .contact-title {
 
 main .contact-us-section .contact-us-list .contact-description p:first-child {
   color: #5c74f0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 main .contact-us-section .contact-us-list .contact-description a {
-  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 main .contact-us-section .contact-us-list .contact-description a:hover {
-  color: #5c74f0;
+  scale: 1.1;
 }
 /*# sourceMappingURL=style.css.map */
